@@ -1,7 +1,5 @@
-body img{
-  width: 500px;
-}
-.hero-page {
+
+#landingPage {
   background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)),
     url("/assets/tyingShoe.jpg");
   background-position: center;
@@ -14,6 +12,13 @@ body img{
   font-size: 20px;
 }
 
+hr{
+  background-color: white;
+  height: 1px;
+  width: 300px;
+  align-items: flex-end;
+}
+
 .name{
   text-align: left;
   padding: 100px;
@@ -22,3 +27,62 @@ body img{
 .mynav{
   background-color: black;
 }
+
+#jim{
+  align-content: center;
+}
+
+/* these bellow two keep the 
+  hr line in line with the <h1> */
+.hr {
+  display: inline-block;
+}
+.hr:after {
+  content: '';
+  display: block;
+  border-top: 1px solid white;
+  margin-top: 0.5em;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+  
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static#about {
+  background: goldenrod;
+}
+
+.static#experience{
+  background: whitesmoke;
+}
+
