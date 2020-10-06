@@ -3,7 +3,7 @@ body img{
 }
 .hero-page {
   background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)),
-    url("/assests/tyingShoe.jpg");
+    url("/assets/tyingShoe.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
