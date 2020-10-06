@@ -139,21 +139,24 @@ hr{
   }
 
     .project_card_image--image1{
-      background: #00B4D8;
+      background: linear-gradient(to bottom right, white, #00B4D8);
+      /* background: #00B4D8; */
     }
-
+    
     .project_card_image--image2{
-      background: #fc6464;
+      background: linear-gradient(to bottom right, white, #fc6464);
+      /* background: #fc6464; */
     }
-
+    
     .project_card_image--image3{
-      background: #fcc764;
+      background: linear-gradient(to bottom right, white, #f9fc64);
+      /* background: #f9fc64; */
     }
-
-      .project_card_image--image1 img{
-        width: 250px;
-      }
-
+    
+          .project_card_image--image1 img{
+            width: 250px;
+          }
+    
       .project_card_image--image2 img{
         width: 220px;
       }
