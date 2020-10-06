@@ -10,12 +10,9 @@
 
 hr{
   border:0;
-  background-color: white;
-  height: 1px;
-  width: 100%;
-
-  background-image: linear-gradient(to right, rgb(66, 66, 66), rgba(255, 255, 255, 0.75),rgb(66, 66, 66));
-
+  height:1px;
+  width:100%;
+  background-image:linear-gradient(to right, rgb(66, 66, 66), rgba(255, 255, 255, 0.75),rgb(66, 66, 66));
 }
 
 .section {
@@ -24,17 +21,28 @@ hr{
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   
   /* For text formatting. */
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.section h1{
   text-shadow: 0 0 5px #000;
+  /* width: 100%; */
+  text-align: center;
+  margin-top: 60px;
 }
 
 .static#title{
+  /* makes the image/text float into focus when page reloads */
+  transition: all 0.3s ease 0s; 
+
   background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)),
     url("/assets/tyingShoe.jpg");
   background-position: center;
@@ -83,3 +91,131 @@ hr{
   background: whitesmoke;
 }
 
+/* START PROJECT CARD STYLING */
+
+.projects_container{
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* each project card is contained in a wrapper */
+/* .wrapper{
+  min-width: 360px;
+  float: left;
+  margin: 20px 15px;
+} */
+
+/* one whole card */
+.project_card {
+  font-family: 'Montserrat', sans-serif;
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: 30px;
+  border-radius: 14px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  }
+
+  .project_card:hover{
+    box-shadow: -1px 15px 50px -12px black;
+  }
+
+  /* picture on the top */
+  .project_card_image{
+    position: relative;
+    height: 230px;
+    margin-bottom: 35px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+
+    .project_card_image--image1{
+      background: #00B4D8;
+    }
+
+    .project_card_image--image2{
+      background: #fc6464;
+    }
+
+    .project_card_image--image3{
+      background: #fcc764;
+    }
+
+      .project_card_image--image1 img{
+        width: 250px;
+      }
+
+      .project_card_image--image2 img{
+        width: 220px;
+      }
+
+      .project_card_image--image3 img{
+        width: 220px;
+      }
+
+  .project_card_title{
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+
+  .project_card_description{
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #4a5667;
+  }
+
+  /* bottom of the card */
+  .project_card_topics{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    overflow: auto;
+  }
+  
+    .project_card_topics_card1{
+      background: #00B4D8;
+    }
+
+      .project_card_topics_card1 .one_third{
+        border-right: 1px solid #019fbe;
+      }
+
+    .project_card_topics_card2{
+      background: #fc6464;
+    }
+
+      .project_card_topics_card2 .one_third{
+        border-right: 1px solid #e05959;
+      }
+
+    .project_card_topics_card3{
+      background: #fcc764;
+    }
+
+      .project_card_topics_card3 .one_third{
+        border-right: 1px solid #d3a653;
+      }
+
+    /* separates the topics in the bottom */
+    .project_card_topics .one_third{
+      width: 33%;
+      float: left;
+      padding: 20px 15px;
+    }
+
+      .project_card_topics .no_border{
+        border-right: none;
+      }

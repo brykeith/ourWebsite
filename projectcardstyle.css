@@ -1,0 +1,123 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* overflow-y: scroll; */
+}
+
+.projects_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+.project_card {
+  font-family: 'Montserrat', sans-serif;
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: 30px;
+  border-radius: 14px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  }
+
+  .project_card:hover{
+    box-shadow: -1px 15px 50px -12px black;
+  }
+
+  .project_card_image{
+    position: relative;
+    height: 230px;
+    margin-bottom: 35px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+
+    .project_card_image--image1{
+      background: #00B4D8;
+    }
+
+    .project_card_image--image2{
+      background: #fc6464;
+    }
+
+    .project_card_image--image3{
+      background: #f9fc64;
+    }
+
+      .project_card_image--image1 img{
+        width: 250px;
+      }
+
+      .project_card_image--image2 img{
+        width: 220px;
+      }
+
+      .project_card_image--image3 img{
+        width: 220px;
+      }
+
+  .project_card_title{
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+
+  .project_card_description{
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #4a5667;
+  }
+
+  .project_card_topics{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    overflow: auto;
+  }
+  
+    .project_card_topics_card1{
+      background: #00B4D8;
+    }
+
+      .project_card_topics_card1 .one_third{
+        border-right: 1px solid #019fbe;
+      }
+
+    .project_card_topics_card2{
+      background: #fc6464;
+    }
+
+      .project_card_topics_card2 .one_third{
+        border-right: 1px solid #e05959;
+      }
+
+    .project_card_topics_card3{
+      background: #f9fc64;
+    }
+
+      .project_card_topics_card3 .one_third{
+        border-right: 1px solid #dcdf58;
+      }
+
+    .project_card_topics .one_third{
+      width: 33%;
+      float: left;
+      padding: 20px 15px;
+    }
+
+      .project_card_topics .no_border{
+        border-right: none;
+      }
