@@ -3,18 +3,22 @@ body img{
 }
 .hero-page {
   background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)),
-    url("KimKissingBrydon.jpeg");
+    url("/assests/tyingShoe.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   color: white;
   font-size: 20px;
 }
 
 .name{
-  text-align: right;
+  text-align: left;
   padding: 100px;
+}
+
+.mynav{
+  background-color: black;
 }
