@@ -84,7 +84,7 @@ hr{
 
 /* The styling for the static div. */
 .static#about {
-  background: goldenrod;
+  background: #CBE1EF;
 }
 
 .static#experience{
@@ -223,3 +223,29 @@ hr{
       .project_card_topics .no_border{
         border-right: none;
       }
+
+      #abouttitle{
+        position: absolute;
+        top: 1px;
+      }
+      #headshot{
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+      }
+
+
+.circle-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.circle-img img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
