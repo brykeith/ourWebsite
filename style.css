@@ -91,6 +91,10 @@ hr{
   background: whitesmoke;
 }
 
+.static#projects{
+  background: #1D3557;
+}
+
 /* START PROJECT CARD STYLING */
 
 .projects_container{
