@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" href="projectcardstyle.css">
+  <!-- add font awesome for arrows -->
+  <script src="https://kit.fontawesome.com/da797ea00e.js" crossorigin="anonymous"></script>
+
   <title>project card</title>
 </head>
 <body>
@@ -98,9 +102,48 @@
   </div> <!-- end projects container -->
 
 
+  <!-- testing out carousel images on projext card -->
+  <div class="wrapper">
+      <div class="project_card card1">
+        <div class="project_card_image project_card_image--image1">
+          
+          <div class="carousel_container">
 
+            <!-- arrows from font awesome -->
+            <i class="fas fa-arrow-left prevBtn"></i>
+            <i class="fas fa-arrow-right nextBtn" class="nextBtn"></i>
 
+            <div class="carousel_slide">
+              <img id="lastClone" src="../assets/codingImages4.png" alt="coding image">
+              <img src="../assets/codingImages1.png" alt="coding image">
+              <img src="../assets/codingImages2.png" alt="coding image">
+              <img src="../assets/codingImages3.png" alt="coding image">
+              <img src="../assets/codingImages4.png" alt="coding image">
+              <img id="firstClone" src="../assets/codingImages1.png" alt="codSing image">
+            </div>
+          </div>
+          <script src="app.js"></script>
+        
+        </div>
+        <div class="project_card_title">Project Title</div>
 
+        <div class="project_card_description">Project description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatibus. Ea nobis maiores assumenda illo a amet, consequuntur provident libero tempore reiciendis rem minima? Doloremque, illum corporis? Velit, recusandae non.</div>
 
+        <div class="project_card_topics project_card_topics_card1">
+          <div class="one_third">
+            <div class="topic_abbreviation">HTML</div>
+          </div>
+
+          <div class="one_third">
+            <div class="topic_abbreviation">CSS</div>
+          </div>
+
+          <div class="one_third no_border">
+            <div class="topic_abbreviation">JS</div>
+          </div>
+
+        </div>
+      </div> <!-- end project card -->
+  </div> <!-- end wrapper -->
 </body>
 </html>

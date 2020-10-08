@@ -47,6 +47,7 @@
   .project_card_image{
     position: relative;
     height: 230px;
+    width: 100%;
     margin-bottom: 35px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -137,3 +138,39 @@
       .project_card_topics .no_border{
         border-right: none;
       }
+
+/* add styling for projectCard photo slider */
+.carousel_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+
+  
+}
+
+.carousel_slide{
+  display: flex;
+}
+
+.carousel_slide img{
+  width: 300px;
+}
+
+.prevBtn{
+  position: absolute;
+  top: 48%;
+  z-index: 10;
+  left: 3%;
+  color: white;
+  font-size: 30px;
+}
+
+.nextBtn{
+  position: absolute;
+  top: 48%;
+  z-index: 10;
+  right: 3%;
+  color: white;
+  font-size: 30px;
+}
