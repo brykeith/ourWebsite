@@ -8,12 +8,7 @@
   list-style: none;
 }
 
-hr{
-  border:0;
-  height:1px;
-  width:100%;
-  background-image:linear-gradient(to right, rgb(66, 66, 66), rgba(255, 255, 255, 0.75),rgb(66, 66, 66));
-}
+
 
 .section {
   font-family: 'Montserrat', sans-serif;
@@ -32,12 +27,12 @@ hr{
   color: white;
 }
 
-.section h1{
-  text-shadow: 0 0 5px #000;
-  /* width: 100%; */
-  text-align: center;
-  margin-top: 60px;
-}
+  .section h1{
+    text-shadow: 0 0 5px #000;
+    /* width: 100%; */
+    text-align: center;
+    margin-top: 60px;
+  }
 
 .static#title{
   /* makes the image/text float into focus when page reloads */
@@ -56,12 +51,36 @@ hr{
 }
 
   .title_container{
-    display: inline-block;
+    display: block;
+    text-align: center;
   }
+
+    .title_container h1{
+      font-size: 34px;
+      padding: 30px;
+      border-top: white 1px solid;
+      border-bottom: white 1px solid;
+
+    }
+    
+    @media screen and (min-width: 321px) {
+      .title_container h1{
+        font-size: calc(34px + 46*(100vw - 321px)/670);
+      }
+    }
+
+    @media screen and (min-width: 991px) {
+      .title_container h1{
+        font-size: 80px;
+      }
+    }
+
+
 
     .title_container_element{
       margin: 30px;
     }
+
 
 .parallax::after {
   /* Display and position the pseudo-element */
