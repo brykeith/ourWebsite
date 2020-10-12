@@ -12,6 +12,16 @@
 
 
 
+
+
+.sticky_header{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #282e34;
+  color: snow;
+}
+
 .section {
   font-family: 'Montserrat', sans-serif;
 
@@ -141,7 +151,6 @@
   position: relative;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
-  z-index: 9999;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   }

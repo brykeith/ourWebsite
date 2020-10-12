@@ -8,13 +8,22 @@
 }
 
 .projects_container{
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+/* each project card is contained in a wrapper */
+/* .wrapper{
+  min-width: 360px;
+  float: left;
+  margin: 20px 15px;
+} */
 
-
+/* one whole card */
 .project_card {
   font-family: 'Montserrat', sans-serif;
   background: white;
@@ -34,9 +43,11 @@
     box-shadow: -1px 15px 50px -12px black;
   }
 
+  /* picture on the top */
   .project_card_image{
     position: relative;
     height: 230px;
+    width: 100%;
     margin-bottom: 35px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -46,21 +57,21 @@
       background: linear-gradient(to bottom right, white, #00B4D8);
       /* background: #00B4D8; */
     }
-
+    
     .project_card_image--image2{
       background: linear-gradient(to bottom right, white, #fc6464);
       /* background: #fc6464; */
     }
-
+    
     .project_card_image--image3{
       background: linear-gradient(to bottom right, white, #f9fc64);
       /* background: #f9fc64; */
     }
-
-      .project_card_image--image1 img{
-        width: 250px;
-      }
-
+    
+          .project_card_image--image1 img{
+            width: 250px;
+          }
+    
       .project_card_image--image2 img{
         width: 220px;
       }
@@ -82,6 +93,7 @@
     color: #4a5667;
   }
 
+  /* bottom of the card */
   .project_card_topics{
     font-size: 24px;
     text-transform: uppercase;
@@ -89,6 +101,7 @@
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
     overflow: auto;
+    color: white;
   }
   
     .project_card_topics_card1{
@@ -108,13 +121,14 @@
       }
 
     .project_card_topics_card3{
-      background: #f9fc64;
+      background: #fcc764;
     }
 
       .project_card_topics_card3 .one_third{
-        border-right: 1px solid #dcdf58;
+        border-right: 1px solid #d3a653;
       }
 
+    /* separates the topics in the bottom */
     .project_card_topics .one_third{
       width: 33%;
       float: left;
@@ -124,3 +138,39 @@
       .project_card_topics .no_border{
         border-right: none;
       }
+
+/* add styling for projectCard photo slider */
+.carousel_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+
+  
+}
+
+.carousel_slide{
+  display: flex;
+}
+
+.carousel_slide img{
+  width: 300px;
+}
+
+.prevBtn{
+  position: absolute;
+  top: 48%;
+  z-index: 10;
+  left: 3%;
+  color: white;
+  font-size: 30px;
+}
+
+.nextBtn{
+  position: absolute;
+  top: 48%;
+  z-index: 10;
+  right: 3%;
+  color: white;
+  font-size: 30px;
+}
