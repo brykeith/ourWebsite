@@ -1,0 +1,86 @@
+$mainGray: #282e34;
+$myRed: #f94144;
+$myOrange1: #f3722c;
+$myOrange2: #f8a43d;
+$myYellow: #f9c74f;
+$myGreen: #90be6d;
+$myBlue1: #43aa8b;
+$myBlue2: #577590;
+$myPurple: #8171bb;
+
+.projects-section{
+  background: $mainGray;
+
+  .full-projects-section-wrapper{
+    background: $myRed;
+    display: block;
+    width: 100%;
+    padding: 5px;
+
+    .section-title-container--projects{
+      background: $myOrange1;
+      display: flex;
+      justify-content: center;
+
+      .section-title--projects{
+        background: $myOrange2;
+      }
+    }
+
+    .main-project-outer-container{
+      background: $myYellow;
+      padding: 5px;
+
+      .main-project-inner-container{
+        background: $myGreen;
+        display: grid;
+        grid-template-rows: .3fr 1fr 1fr;
+        grid-template-areas: 
+          "title"
+          "image"
+          "description";
+
+        .main-project-image{
+          background: url(/assets/project-one-img.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          grid-area: image;
+        }
+
+        .main-project-title{
+          background: $myBlue2;
+          grid-area: title;
+        }
+
+        .main-project-description{
+          background: $myOrange1;
+          grid-area: description;
+        }
+      }
+    }
+
+    .projects-carousel-outer-container{
+      background: $myOrange2;
+
+      .project-slide{
+        background: $myYellow;
+
+        .project-card{
+        }
+
+        .card-one{
+          background: $myBlue1;
+        }
+
+        .card-two{
+          background: $myBlue2;
+        }
+
+        .card-three{
+          background: $myPurple;
+        }
+      }
+    }
+  }
+}

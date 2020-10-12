@@ -1,0 +1,83 @@
+.projects-section {
+  background: #282e34;
+}
+
+.projects-section .full-projects-section-wrapper {
+  background: #f94144;
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+.projects-section .full-projects-section-wrapper .section-title-container--projects {
+  background: #f3722c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-section .full-projects-section-wrapper .section-title-container--projects .section-title--projects {
+  background: #f8a43d;
+}
+
+.projects-section .full-projects-section-wrapper .main-project-outer-container {
+  background: #f9c74f;
+  padding: 5px;
+}
+
+.projects-section .full-projects-section-wrapper .main-project-outer-container .main-project-inner-container {
+  background: #90be6d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: .3fr 1fr 1fr;
+      grid-template-rows: .3fr 1fr 1fr;
+      grid-template-areas: "title" "image" "description";
+}
+
+.projects-section .full-projects-section-wrapper .main-project-outer-container .main-project-inner-container .main-project-image {
+  background: url(/assets/project-one-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: image;
+}
+
+.projects-section .full-projects-section-wrapper .main-project-outer-container .main-project-inner-container .main-project-title {
+  background: #577590;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.projects-section .full-projects-section-wrapper .main-project-outer-container .main-project-inner-container .main-project-description {
+  background: #f3722c;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: description;
+}
+
+.projects-section .full-projects-section-wrapper .projects-carousel-outer-container {
+  background: #f8a43d;
+}
+
+.projects-section .full-projects-section-wrapper .projects-carousel-outer-container .project-slide {
+  background: #f9c74f;
+}
+
+.projects-section .full-projects-section-wrapper .projects-carousel-outer-container .project-slide .card-one {
+  background: #43aa8b;
+}
+
+.projects-section .full-projects-section-wrapper .projects-carousel-outer-container .project-slide .card-two {
+  background: #577590;
+}
+
+.projects-section .full-projects-section-wrapper .projects-carousel-outer-container .project-slide .card-three {
+  background: #8171bb;
+}
+/*# sourceMappingURL=projectcardstyle.css.map */

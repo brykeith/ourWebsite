@@ -1,209 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Document</title>
-</head>
-<body>
-  <!-- top landing page -->
-  <div class="section static" id="title">
-    <div class="title_container">
-      <h1 class="title_container_element title_name">Brydon Johnson</h1>
-      <p class="title_container_element">
-        Master coder and website builder
-      </p>
-    </div>
-  </div>
-  
-  <div class="sticky_header_container">
-  
-    <div class="sticky_header"> HERE IS HEADER </div>
-
-  <!-- about page -->
-  <div class="section static" id="about">
-    
-    <!-- container for title of the page -->
-    <div class="container col-3" id="abouttitle">
-      <h1 style="color: #F7892E;">Profile</h1>
-      <p style="text-align: center; color: black;">I am curios web developer</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/projectcardstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- top landing page -->
+    <div class="section static" id="title">
+      <div class="title_container">
+        <h1 class="title_container_element title_name">Brydon Johnson</h1>
+        <p class="title_container_element">Master coder and website builder</p>
+      </div>
     </div>
 
-    <!-- container for the row of information on the page -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <h3 style="color: #F7892E">About me</h3>
+    <div class="sticky_header_container">
+      <header class="sticky_header">HERE IS HEADER</header>
 
-          <p style="color: black;">
-            I am a dedicated software developer
-            with a well rounded knowledge of many
-            different aspects of the dicipline.
-            I deal with front end web development
-            and using php to connect them to a back
-            end database
+      <!-- about page -->
+      <div class="section static" id="about">
+        <!-- container for title of the page -->
+        <div class="container col-3" id="abouttitle">
+          <h1 style="color: #f7892e">Profile</h1>
+          <p style="text-align: center; color: black">
+            I am curios web developer
           </p>
         </div>
 
-        <div class="col-sm">
-          <!-- funcky classes in css for sizing the image to make it smaller -->
-          <div class="circle-img img-circle" style="size:10vh">
-            <img src="/assets/brydonheadshot.png" alt="Brydon"">
+        <!-- container for the row of information on the page -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h3 style="color: #f7892e">About me</h3>
+
+              <p style="color: black">
+                I am a dedicated software developer with a well rounded
+                knowledge of many different aspects of the dicipline. I deal
+                with front end web development and using php to connect them to
+                a back end database
+              </p>
+            </div>
+
+            <div class="col-sm">
+              <!-- funcky classes in css for sizing the image to make it smaller -->
+              <div class="circle-img img-circle" style="size: 10vh">
+                <img src="/assets/brydonheadshot.png" alt="Brydon"">
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <h3 style="color: #f7892e">Personal</h3>
+
+              <p style="color: black">
+                <strong>schooling:</strong><br />
+                Arizona State University<br />
+                <strong>Hobbys:</strong><br />
+                Ultimate frisbee<br />
+                Playing drum set<br />
+                Hiking<br />
+                Building custom computers<br />
+              </p>
+            </div>
           </div>
         </div>
-
-        <div class="col-sm">
-          <h3 style="color: #F7892E">Personal</h3>
-
-          <p style="color: black;">
-            <strong>schooling:</strong><br />
-			      Arizona State University<br />
-			      <strong>Hobbys:</strong><br />
-            Ultimate frisbee<br />
-            Playing drum set<br />
-            Hiking<br />
-            Building custom computers<br />
-          </p>
-        </div>
       </div>
-    </div>
-    <!-- <div class="container mt-5 pt-5 pb-5 mb-5">
-      <div class="row align-items-center justify-content-around"> 
 
-        <div class="col-3">
-          <h3>About me</h3>
-          <hr>
-          <p>fasdfaskdfhsakhdfhsdkfhasd
-            asaskldslkjhdfjalshdfalksjhdfajshdj
-            ;ashdflaksjdfhlakjsdhfaklhdf
-            alksjdhdfjlashdfalshdflaskjd
-          </p>
+      <!-- project page -->
+      <section class="projects-section">
+        <div class="full-projects-section-wrapper">
+          <div
+            class="section-title-container section-title-container--projects"
+          >
+            <div class="section-title section-title--projects">Projects</div>
+          </div>
+          <!-- end section-title-container -->
+          <div class="main-project-outer-container">
+            <div class="main-project-inner-container">
+              <div class="main-project-image">main image</div>
+              <div class="main-project-title">Main Title</div>
+              <div class="main-project-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Pariatur veritatis laborum mollitia doloremque maiores delectus
+                laboriosam dignissimos odit sunt eos corrupti, et tempore vero
+                asperiores libero, cupiditate architecto eligendi, sit nulla
+                doloribus consectetur optio veniam dolores voluptates!
+                Repudiandae, aperiam. Voluptates dolore dolorem atque, incidunt
+                qui consequuntur labore quisquam reiciendis minus.
+              </div>
+            </div>
+          </div>
+          <div class="projects-carousel-outer-container">
+            <div class="project-slide">
+              <div class="project-card card-one">one</div>
+              <div class="project-card card-two">two</div>
+              <div class="project-card card-three">three</div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="col-3">
-          <img src="/assets/brydonheadshot.png" alt="Brydon" style="width: 50%; height: 50%;">
-        </div>
-
-
+      <div class="section static" id="experience">
+        <h1>rune scape</h1>
       </div>
-    </div> -->
 
- 
-
-  </div>
-
-
-    <!-- project page -->
-    <div class="section static" id="projects">
-      
-      <h1>Projects</h1>
-
-      <!-- card 1 -->
-      <div class="projects_container">
-        <div class="wrapper">
-          <a href="project1.html">
-            <div class="project_card card1">
-              <div class="project_card_image project_card_image--image1">
-                <img src="../assets/codingImages1.png" alt="coding image">
-              </div>
-              <div class="project_card_title">Project Title</div>
-              <div class="project_card_description">Project description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatibus. Ea nobis maiores assumenda illo a amet, consequuntur provident libero tempore reiciendis rem minima? Doloremque, illum corporis? Velit, recusandae non.</div>
-            
-              <div class="project_card_topics project_card_topics_card1">
-                <div class="one_third">
-                  <div class="topic_abbreviation">HTML</div>
-                </div>
-      
-                <div class="one_third">
-                  <div class="topic_abbreviation">CSS</div>
-                </div>
-      
-                <div class="one_third no_border">
-                  <div class="topic_abbreviation">JS</div>
-                </div>
-      
-              </div>
-            </div> <!-- end project card -->
-          </a>
-        </div> <!-- end wrapper -->
-    
-        <!-- card 2 -->
-        <div class="wrapper">
-          <a href="project2.html">
-            <div class="project_card card2">
-              <div class="project_card_image project_card_image--image2">
-                <img src="../assets/codingImages2.png" alt="coding image">
-              </div>
-              <div class="project_card_title">Project Title</div>
-              <div class="project_card_description">Project description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatibus. Ea nobis maiores assumenda illo a amet, consequuntur provident libero tempore reiciendis rem minima? Doloremque, illum corporis? Velit, recusandae non.</div>
-            
-              <div class="project_card_topics project_card_topics_card2">
-                <div class="one_third">
-                  <div class="topic_abbreviation">HTML</div>
-                </div>
-      
-                <div class="one_third">
-                  <div class="topic_abbreviation">CSS</div>
-                </div>
-      
-                <div class="one_third no_border">
-                  <div class="topic_abbreviation">JS</div>
-                </div>
-      
-              </div>
-      
-            </div> <!-- end project card -->
-          </a>
-        </div> <!-- end wrapper -->
-    
-        <!-- card 3 -->
-        <div class="wrapper">
-          <a href="project3.html">
-            <div class="project_card card3">
-              <div class="project_card_image project_card_image--image3">
-                <img src="../assets/codingImages3.png" alt="coding image">
-              </div>
-              <div class="project_card_title">Project Title</div>
-              <div class="project_card_description">Project description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatibus. Ea nobis maiores assumenda illo a amet, consequuntur provident libero tempore reiciendis rem minima? Doloremque, illum corporis? Velit, recusandae non.</div>
-            
-              <div class="project_card_topics project_card_topics_card3">
-                <div class="one_third">
-                  <div class="topic_abbreviation">HTML</div>
-                </div>
-      
-                <div class="one_third">
-                  <div class="topic_abbreviation">CSS</div>
-                </div>
-      
-                <div class="one_third no_border">
-                  <div class="topic_abbreviation">JS</div>
-                </div>
-      
-              </div>
-      
-            </div> <!-- end project card -->
-          </a>
-        </div> <!-- end wrapper -->
-    
-    
-      </div> <!-- end projects container -->
-
+      <div id="about"></div>
     </div>
+    <!-- end sticky header container -->
 
-    <div class="section static" id="experience">
-      <h1>rune scape</h1>
-    </div>
-
-
-    <div id="about"></div>
-
-  </div> <!-- end sticky header container -->
-
-<!-- BELLOW is bootstrap stuff -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+    <!-- BELLOW is bootstrap stuff -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,11 +1,4 @@
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /* overflow-y: scroll; */
-}
+/* START PROJECT CARD STYLING */
 
 .projects_container{
   width: 100%;
@@ -17,11 +10,6 @@
 }
 
 /* each project card is contained in a wrapper */
-/* .wrapper{
-  min-width: 360px;
-  float: left;
-  margin: 20px 15px;
-} */
 
 /* one whole card */
 .project_card {
@@ -34,7 +22,6 @@
   position: relative;
   text-align: center;
   box-shadow: -1px 15px 30px -12px black;
-  z-index: 9999;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   }
@@ -47,7 +34,6 @@
   .project_card_image{
     position: relative;
     height: 230px;
-    width: 100%;
     margin-bottom: 35px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
@@ -138,39 +124,3 @@
       .project_card_topics .no_border{
         border-right: none;
       }
-
-/* add styling for projectCard photo slider */
-.carousel_container{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  overflow: hidden;
-
-  
-}
-
-.carousel_slide{
-  display: flex;
-}
-
-.carousel_slide img{
-  width: 300px;
-}
-
-.prevBtn{
-  position: absolute;
-  top: 48%;
-  z-index: 10;
-  left: 3%;
-  color: white;
-  font-size: 30px;
-}
-
-.nextBtn{
-  position: absolute;
-  top: 48%;
-  z-index: 10;
-  right: 3%;
-  color: white;
-  font-size: 30px;
-}
