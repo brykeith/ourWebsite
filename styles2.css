@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  line-height: 1.4;
+}
+
+
+/* !!!!!!!!!! Title Section !!!!!!!!!!!! */
+.title-section{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  /* start background styling */
+  background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)),
+  url("/assets/tyingShoe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+  .title-box{
+    width: fit-content;
+  }
+
+    .title-sub-text{
+      color: white;
+      padding: 10px 0px 5px 10px;
+      letter-spacing: 2px;
+    }
+
+    .title-name{
+      color: white;
+      padding: 20px 10px 20px 10px;
+      font-weight: 500;
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+
+    #hr-above-name, #hr-below-name{
+      height: 3px;
+      background-color: white;
+    }
