@@ -4,27 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles2.css">
-  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="menu1.css">
   <title>I'm Brydon Johnson</title>
 </head>
 <body>
 
   <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger-button"><div></div></div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+    <input type="checkbox" class="menu-toggler">
+    <div class="hamburger-button"><div class="hamburger-line"></div></div>
+    <div class="menu-outer-container">
+      <div class="menu-inner-container">
+        <div class="logo logo-dark-text">
+          <img src="/assets/brydon_logo_with_subtext_black.png" alt="">
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="logo logo-white-text">
+          <img src="/assets/brydon-logo-with-subtext-white.png" alt="">
+        </div>
+        <div class="menu-hypers-container">
+          <a href="#" class="nav-btn nav-btn-home">Home</a>
+          <a href="#" class="nav-btn nav-btn-projects">Projects</a>
+          <a href="#" class="nav-btn nav-btn-about">About</a>
+          <a href="#" class="nav-btn nav-btn-contact">Contact</a>
+        </div>
+      </div> <!-- end menu-options-inner-container -->
+    </div> <!-- end menu-options-outer-container -->
+  </div> <!-- end menu-wrap -->
 
   <section class="title-section">
     <div class="title-box">
