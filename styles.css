@@ -52,7 +52,251 @@
       letter-spacing: 2px;
     }
 
-    #hr-above-name, #hr-below-name{
-      height: 3px;
-      background-color: white;
+
+/* projects & about section styling */
+    
+    .everything-below-title-section-outer-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
+
+
+    .everything-below-title-section-inner-wrapper{
+      width: 339px;
+      position: relative;
+    }
+
+    .section{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-title{
+      width: fit-content;
+      position: relative;
+      margin: 40px 0 40px 0;
+      font-size: 1.9rem;
+      letter-spacing: 3px;
+      color: #535050;
+      font-weight: 700;
+    }
+
+    .section-title::before,
+    .section-title::after{
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #535050;
+      position: absolute;
+    }
+
+    .section-title::before{
+      top: -10px;
+    }
+
+    .section-title::after{
+      bottom: -10px;
+    }
+
+    .project-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 0 60px 0;
+    }
+
+    .img-card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 339px;
+    }
+
+    .img-card img{
+      width: 339px;
+      height: 226px;
+      border-radius: 30px;
+    }
+
+    .project-info-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 8fr;
+      gap: 15px;
+      width: 100%;
+      color: #848282;
+      margin: 10px 0 0 0;
+    }
+
+    .project-skills-title-text,
+    .project-description-title-text{
+      position: relative;
+      margin: 10px 0 10px 0;
+      padding: 0 10px 0 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* .project-description-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .project-skills-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+
+    .project-skills-title-text::before,
+    .project-skills-title-text::after,
+    .project-description-title-text::before,
+    .project-description-title-text::after{
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #535050;
+      position: absolute;
+    }
+
+    .project-skills-title-text::before,
+    .project-description-title-text::before{
+      top: -5px;
+      left: 0;
+    }
+
+    .project-skills-title-text::after,
+    .project-description-title-text::after{
+      bottom: -5px;
+      left: 0;
+    }
+
+    .project-link-section{
+      grid-column: 1 / 3;
+      font-size: 14px;
+    }
+
+    .project-link-bold-text{
+      font-weight: 700;
+    }
+
+    .project-link-section a{
+      color: #2F9BEE;
+    }
+
+
+/* start sbout section */
+
+.about-subsection{
+  margin: 0 0 60px 0;
+}
+
+.about-subsection-heading{
+  color:#014D8F;
+  font-size: 1.4rem;
+}
+
+.about-subsection-subheading{
+  color: #386641;
+  font-size: 1.1rem;
+}
+
+.about-subsection-date{
+  font-size: .9rem;
+  font-style: italic;
+  color: #848282;
+  margin: 0 0 20px 0;
+}
+
+/* contact section */
+
+.blue-section-on-bottom{
+  width: 100vw;
+  height: 300px;
+  background: #014D8F;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section{
+  position: absolute;
+  bottom: -320px;
+}
+
+.lets-talk-box{
+  background: #141C3A;
+  color: white;
+  border: 1px solid #707070;
+  border-radius: 9px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lets-talk-box-heading{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.lets-talk-box-body{
+  margin-bottom: 10px;
+}
+
+.lets-talk-box-button{
+  border: 2px solid #014D8F;
+  border-radius: 18px;
+  width: fit-content;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: white;
+  transition: all .3s ease;
+}
+
+.lets-talk-box-button:hover{
+  background: white;
+  color: #014D8F;
+}
+
+.social-links-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#facebook, #instagram, #linkedin{
+  width: fit-content;
+}
+
+#facebook img{
+  width: 40px;
+}
+
+#instagram img{
+  width: 40px;
+}
+
+#linkedin img{
+  width: 40px;
+}
+
+.message-container{
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
